@@ -350,4 +350,4 @@ with gr.Blocks(theme=gr.themes.Default(primary_hue="sky")) as ui:
         outputs=[status_box, clarification_box, clarification_input, report_box, query_textbox, session_state],
     )
 
-ui.launch(inbrowser=True)
+ui.launch(inbrowser=True, share=True)
