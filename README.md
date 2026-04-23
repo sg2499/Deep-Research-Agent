@@ -27,22 +27,22 @@ I have **not provided unrestricted public access to the fully enabled final prod
 Why?
 
 Because this project uses:
-- **paid OpenAI API calls**
+- **Paid OpenAI API calls**
 - **SendGrid email delivery**
-- a **multi-step agent workflow** that can trigger multiple model/tool calls per research run
+- A **multi-step agent workflow** that can trigger multiple model/tool calls per research run
 
 If I leave the final version fully open for unrestricted public use, it can quickly lead to:
-- uncontrolled **API costs**
-- **email abuse / spam risks**
-- misuse of private third-party credentials
-- a poor experience for serious users who actually want to understand and build the system properly
+- Uncontrolled **API Costs**
+- **Email Abuse / Spam Risks**
+- Misuse of private third-party credentials
+- A poor experience for serious users who actually want to understand and build the system properly
 
 So instead of exposing the fully enabled version carelessly, I have chosen to share:
-- the **complete codebase**
-- the **full setup instructions**
-- the **system design**
-- the **workflow explanation**
-- and a **screenshot of the final output**
+- The **complete codebase**
+- The **full setup instructions**
+- The **system design**
+- The **workflow explanation**
+- And a **screenshot of the final output**
 
 This lets anyone interested in the project understand exactly how it works and recreate it properly on their own machine or cloud deployment.
 
@@ -53,32 +53,24 @@ This lets anyone interested in the project understand exactly how it works and r
 This repository is meant to be more than a “copy-paste project.”
 
 I want anyone going through this repo to:
-- understand how a multi-agent research workflow is designed
-- learn how clarification-first systems improve output quality
-- see how orchestrator-agent architecture can be built using specialist agents
-- understand how environment variables, secrets, and third-party APIs are integrated
-- deploy and operate the project responsibly using their **own** credentials
+- Understand how a multi-agent research workflow is designed
+- Learn how clarification-first systems improve output quality
+- See how orchestrator-agent architecture can be built using specialist agents
+- Understand how environment variables, secrets, and third-party APIs are integrated
+- Deploy and operate the project responsibly using their **own** credentials
 
 In other words:
 
 > **Please do not just blindly copy what I have done. Try to understand it, rebuild it, tweak it, and take away something genuinely useful from it as a learning experience.**
 
 If this repository helps you:
-- learn agent orchestration
-- learn Gradio deployment
-- learn OpenAI API integration
-- learn SendGrid setup
-- learn how to structure a serious portfolio project
+- Learn agent orchestration
+- Learn Gradio deployment
+- Learn OpenAI API integration
+- Learn SendGrid setup
+- Learn how to structure a serious portfolio project
 
 then it has served its real purpose.
-
----
-
-This repository hosts a **Deep Research Agent** built with **Gradio**, **OpenAI Agents SDK**, **Pydantic**, **SendGrid**, and **Web Search**.
-
-The application is designed to behave like an agentic research assistant rather than a simple one-shot chatbot. It first checks whether the user’s query needs clarification, asks 3 to 4 targeted follow-up questions when necessary, generates a structured web research plan, runs multiple searches, synthesizes the findings into a long-form report, and can optionally send the final report by email.
-
-The project now includes a **top-level orchestrator agent** that coordinates specialist agents using **agents-as-tools** and **handoffs**, making the overall architecture more modular, scalable, and portfolio-ready.
 
 ---
 
